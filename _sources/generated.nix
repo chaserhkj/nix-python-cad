@@ -23,19 +23,6 @@
       sha256 = "sha256-klssRLh4ktKSe1K3sHPlwXznU6GWe8csoioHT1xyYHQ=";
     };
   };
-  py-lib3mf = {
-    pname = "py-lib3mf";
-    version = "44411b9120f789676a6289dc9ae045741a011a3f";
-    src = fetchgit {
-      url = "https://github.com/jdegenstein/py-lib3mf";
-      rev = "44411b9120f789676a6289dc9ae045741a011a3f";
-      fetchSubmodules = false;
-      deepClone = false;
-      leaveDotGit = false;
-      sha256 = "sha256-WovqHQiv2dymd8kxfIRsTJifD2AaDOoaaA8uxiq6nME=";
-    };
-    date = "2024-05-14";
-  };
   svgpathtools = {
     pname = "svgpathtools";
     version = "1.6.1";

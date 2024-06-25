@@ -6,10 +6,6 @@ fetch.github = "gumyr/build123d"
 src.pypi = "svgpathtools"
 fetch.pypi = "svgpathtools"
 
-[py-lib3mf]
-src.git = "https://github.com/jdegenstein/py-lib3mf"
-fetch.git = "https://github.com/jdegenstein/py-lib3mf"
-
 [lib3mf]
 src.github = "3MFConsortium/lib3mf"
 fetch.github = "3MFConsortium/lib3mf"
