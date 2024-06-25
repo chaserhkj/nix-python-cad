@@ -1,0 +1,22 @@
+{
+    "build123d": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "build123d",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "gumyr",
+            "repo": "build123d",
+            "rev": "v0.5.0",
+            "sha256": "sha256-0ztJeKRmIWJeaF3Os8bydTN2wKV0ca6WTsKj5sLksPg=",
+            "type": "github"
+        },
+        "version": "v0.5.0"
+    }
+}
