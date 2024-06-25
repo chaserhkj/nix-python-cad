@@ -13,3 +13,8 @@ fetch.github = "3MFConsortium/lib3mf"
 [trianglesolver]
 src.pypi = "trianglesolver"
 fetch.pypi = "trianglesolver"
+
+[ocp]
+src.github = "CadQuery/OCP"
+fetch.github = "CadQuery/OCP"
+git.fetchSubmodules = true

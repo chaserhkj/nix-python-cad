@@ -8,6 +8,7 @@
       svgpathtools = python3Packages.callPackage ./svgpathtools.nix {};
       py-lib3mf = python3Packages.callPackage ./py-lib3mf.nix {inherit (localPkgs) lib3mf;};
       trianglesolver = python3Packages.callPackage ./trianglesolver.nix {};
+      ocp = callPackage ./ocp.nix {};
     };
   };
 }

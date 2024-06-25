@@ -39,6 +39,26 @@
         },
         "version": "v2.3.1"
     },
+    "ocp": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "ocp",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": true,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "CadQuery",
+            "repo": "OCP",
+            "rev": "7.7.2.1",
+            "sha256": "sha256-9xJVg0Y1UBcbknHgdPYMMbqAg9piqEEypkY3emA08oI=",
+            "type": "github"
+        },
+        "version": "7.7.2.1"
+    },
     "svgpathtools": {
         "cargoLocks": null,
         "date": null,

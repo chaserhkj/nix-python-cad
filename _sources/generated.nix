@@ -23,6 +23,17 @@
       sha256 = "sha256-klssRLh4ktKSe1K3sHPlwXznU6GWe8csoioHT1xyYHQ=";
     };
   };
+  ocp = {
+    pname = "ocp";
+    version = "7.7.2.1";
+    src = fetchFromGitHub {
+      owner = "CadQuery";
+      repo = "OCP";
+      rev = "7.7.2.1";
+      fetchSubmodules = true;
+      sha256 = "sha256-9xJVg0Y1UBcbknHgdPYMMbqAg9piqEEypkY3emA08oI=";
+    };
+  };
   svgpathtools = {
     pname = "svgpathtools";
     version = "1.6.1";
