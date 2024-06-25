@@ -17,4 +17,5 @@
 _fetched = (callPackage ../_sources/generated.nix {}).build123d;
 in buildPythonPackage (_fetched // rec {
   pyproject = true;
+  version = lib.strings.removePrefix "v" _fetched.version;
 })

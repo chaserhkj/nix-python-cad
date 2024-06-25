@@ -4,6 +4,6 @@
       let localPkgs = self'.packages;
     in rec {
       lib3mf = callPackage ./lib3mf {};
-    }
+    };
   };
 }

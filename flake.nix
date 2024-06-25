@@ -9,7 +9,8 @@
   outputs = inputs@{ flake-parts, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
-        ./packages/module.nix
+        ./packages
+        ./patched
       ];
       # Only x86_64-linux is tested at the moment, will try to add more later
       systems = [ "x86_64-linux" ];
