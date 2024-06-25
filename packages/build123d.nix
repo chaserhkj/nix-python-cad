@@ -9,12 +9,12 @@
   setuptools-scm,
 
   # dependencies
-  cadquey-ocp,
+  # cadquey-ocp,
   typing-extensions,
   numpy,
   svgpathtools,
 }: let
-_fetched = (callPackage ../_sources/generated.nix).build123d;
+_fetched = (callPackage ../_sources/generated.nix {}).build123d;
 in buildPythonPackage (_fetched // rec {
   pyproject = true;
 })

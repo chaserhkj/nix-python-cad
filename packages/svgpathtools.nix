@@ -11,7 +11,15 @@
   svgwrite,
   scipy,
 }: let
-_fetched = (callPackage ../_sources/generated.nix).svgpathtools;
+_fetched = (callPackage ../_sources/generated.nix {}).svgpathtools;
 in buildPythonPackage (_fetched // rec {
   pyproject = true;
+
+  build-system = [setuptools];
+
+  dependencies = [
+    numpy
+    svgwrite
+    scipy
+  ];
 })
