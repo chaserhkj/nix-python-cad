@@ -53,5 +53,20 @@
             "url": "https://pypi.org/packages/source/s/svgpathtools/svgpathtools-1.6.1.tar.gz"
         },
         "version": "1.6.1"
+    },
+    "trianglesolver": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "trianglesolver",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-SvGKreV51cDWQ4mz5lrq8Gz/JjGXYszYWeMmhVmnauo=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/t/trianglesolver/trianglesolver-1.2.tar.gz"
+        },
+        "version": "1.2"
     }
 }

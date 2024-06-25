@@ -9,3 +9,7 @@ fetch.pypi = "svgpathtools"
 [lib3mf]
 src.github = "3MFConsortium/lib3mf"
 fetch.github = "3MFConsortium/lib3mf"
+
+[trianglesolver]
+src.pypi = "trianglesolver"
+fetch.pypi = "trianglesolver"

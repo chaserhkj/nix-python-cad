@@ -31,4 +31,12 @@
       sha256 = "sha256-cFTm3hlT4pW/Vl1TXVhWlUU7CfjbSi98SFM0hzIJej4=";
     };
   };
+  trianglesolver = {
+    pname = "trianglesolver";
+    version = "1.2";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/t/trianglesolver/trianglesolver-1.2.tar.gz";
+      sha256 = "sha256-SvGKreV51cDWQ4mz5lrq8Gz/JjGXYszYWeMmhVmnauo=";
+    };
+  };
 }
