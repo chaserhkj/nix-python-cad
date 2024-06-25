@@ -12,4 +12,12 @@
       sha256 = "sha256-0ztJeKRmIWJeaF3Os8bydTN2wKV0ca6WTsKj5sLksPg=";
     };
   };
+  svgpathtools = {
+    pname = "svgpathtools";
+    version = "1.6.1";
+    src = fetchurl {
+      url = "https://pypi.org/packages/source/s/svgpathtools/svgpathtools-1.6.1.tar.gz";
+      sha256 = "sha256-cFTm3hlT4pW/Vl1TXVhWlUU7CfjbSi98SFM0hzIJej4=";
+    };
+  };
 }

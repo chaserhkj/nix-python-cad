@@ -18,5 +18,20 @@
             "type": "github"
         },
         "version": "v0.5.0"
+    },
+    "svgpathtools": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "svgpathtools",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "name": null,
+            "sha256": "sha256-cFTm3hlT4pW/Vl1TXVhWlUU7CfjbSi98SFM0hzIJej4=",
+            "type": "url",
+            "url": "https://pypi.org/packages/source/s/svgpathtools/svgpathtools-1.6.1.tar.gz"
+        },
+        "version": "1.6.1"
     }
 }

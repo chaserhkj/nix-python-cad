@@ -1,3 +1,7 @@
 [build123d]
 src.github = "gumyr/build123d"
 fetch.github = "gumyr/build123d"
+
+[svgpathtools]
+src.pypi = "svgpathtools"
+fetch.pypi = "svgpathtools"
