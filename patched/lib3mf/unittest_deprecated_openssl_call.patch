@@ -1,0 +1,13 @@
+diff --color -ur a/Tests/CPP_Bindings/Source/UnitTest_EncryptionUtils.cpp b/Tests/CPP_Bindings/Source/UnitTest_EncryptionUtils.cpp
+--- a/Tests/CPP_Bindings/Source/UnitTest_EncryptionUtils.cpp	1969-12-31 19:00:01.000000000 -0500
++++ b/Tests/CPP_Bindings/Source/UnitTest_EncryptionUtils.cpp	2024-06-25 16:42:33.301629760 -0400
+@@ -128,9 +128,6 @@
+ }
+ 
+ void EncryptionCallbacks::cleanup() {
+-	RAND_cleanup();
+-	EVP_cleanup();
+-	CRYPTO_cleanup_all_ex_data();
+ }
+ 
+ void EncryptionCallbacks::dataEncryptClientCallback(
