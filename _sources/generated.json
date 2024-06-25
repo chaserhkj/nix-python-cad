@@ -19,6 +19,45 @@
         },
         "version": "v0.5.0"
     },
+    "lib3mf": {
+        "cargoLocks": null,
+        "date": null,
+        "extract": null,
+        "name": "lib3mf",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "owner": "3MFConsortium",
+            "repo": "lib3mf",
+            "rev": "v2.3.1",
+            "sha256": "sha256-klssRLh4ktKSe1K3sHPlwXznU6GWe8csoioHT1xyYHQ=",
+            "type": "github"
+        },
+        "version": "v2.3.1"
+    },
+    "py-lib3mf": {
+        "cargoLocks": null,
+        "date": "2024-05-14",
+        "extract": null,
+        "name": "py-lib3mf",
+        "passthru": null,
+        "pinned": false,
+        "src": {
+            "deepClone": false,
+            "fetchSubmodules": false,
+            "leaveDotGit": false,
+            "name": null,
+            "rev": "44411b9120f789676a6289dc9ae045741a011a3f",
+            "sha256": "sha256-WovqHQiv2dymd8kxfIRsTJifD2AaDOoaaA8uxiq6nME=",
+            "type": "git",
+            "url": "https://github.com/jdegenstein/py-lib3mf"
+        },
+        "version": "44411b9120f789676a6289dc9ae045741a011a3f"
+    },
     "svgpathtools": {
         "cargoLocks": null,
         "date": null,

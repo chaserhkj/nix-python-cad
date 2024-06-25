@@ -12,6 +12,30 @@
       sha256 = "sha256-0ztJeKRmIWJeaF3Os8bydTN2wKV0ca6WTsKj5sLksPg=";
     };
   };
+  lib3mf = {
+    pname = "lib3mf";
+    version = "v2.3.1";
+    src = fetchFromGitHub {
+      owner = "3MFConsortium";
+      repo = "lib3mf";
+      rev = "v2.3.1";
+      fetchSubmodules = false;
+      sha256 = "sha256-klssRLh4ktKSe1K3sHPlwXznU6GWe8csoioHT1xyYHQ=";
+    };
+  };
+  py-lib3mf = {
+    pname = "py-lib3mf";
+    version = "44411b9120f789676a6289dc9ae045741a011a3f";
+    src = fetchgit {
+      url = "https://github.com/jdegenstein/py-lib3mf";
+      rev = "44411b9120f789676a6289dc9ae045741a011a3f";
+      fetchSubmodules = false;
+      deepClone = false;
+      leaveDotGit = false;
+      sha256 = "sha256-WovqHQiv2dymd8kxfIRsTJifD2AaDOoaaA8uxiq6nME=";
+    };
+    date = "2024-05-14";
+  };
   svgpathtools = {
     pname = "svgpathtools";
     version = "1.6.1";
