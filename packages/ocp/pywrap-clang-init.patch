@@ -1,0 +1,44 @@
+diff --color -ur source.orig/pywrap/bindgen/utils.py source/pywrap/bindgen/utils.py
+--- source.orig/pywrap/bindgen/utils.py	2024-06-25 23:56:11.580289152 -0400
++++ source/pywrap/bindgen/utils.py	2024-06-26 00:43:34.737112125 -0400
+@@ -35,17 +35,12 @@
+     return rv
+ 
+ def get_includes(rv=[]):
+-    
++
+     if rv:
+         pass
+-    elif on_windows():
+-        rv.append(Path(prefix) / 'Library/include/clang/')
+     else:
+-        rv.append(Path(prefix) / 'lib/clang/8.0.0/include/')
+-        rv.append(Path(prefix) / 'lib/clang/6.0.1/include/')
+-        rv.append(Path(prefix) / 'lib/clang/9.0.1/include/')
+-        rv.append(Path(prefix) / 'lib/clang/10.0.1/include/')
+-        rv.append(Path(prefix) / 'include/c++/v1/')
++        rv.append(Path('@cxxHeaderPath@'))
++        rv.append(Path('@clangHeaderPath@'))
+     
+     return rv
+ 
+@@ -54,16 +49,14 @@
+     global initialized,ix
+     
+     if not initialized:
+-        conda_prefix = Path(getenv('CONDA_PREFIX', ''))
++        lib_dir = Path('@clangLibPath@')
+         
+         if path:
+             pass
+-        elif platform.startswith('win'):
+-            path = conda_prefix / 'Library' / 'bin' / 'libclang.dll'
+         elif platform.startswith('linux') or platform.startswith('freebsd'):
+-            path = conda_prefix / 'lib' / 'libclang.so'
++            path = lib_dir / 'libclang.so'
+         elif platform.startswith('darwin'):
+-            path = conda_prefix / 'lib' / 'libclang.dylib'
++            path = lib_dir / 'libclang.dylib'
+         
+         Config.set_library_file(path)
+         
