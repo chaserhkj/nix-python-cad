@@ -11,6 +11,6 @@
   inherit (lib3mf) version;
 } ''
 mkdir -p $out/${python.sitePackages}
-cp --reflink=auto ${lib3mf.dev}/include/lib3mf/Bindings/Python/Lib3MF.py $out/${python.sitePackages}
+cp --reflink=auto ${lib.getDev lib3mf}/include/lib3mf/Bindings/Python/Lib3MF.py $out/${python.sitePackages}
 ln -sf ${lib3mf}/lib/lib3mf.so $out/${python.sitePackages}/
 '')
