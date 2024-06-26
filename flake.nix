@@ -9,6 +9,8 @@
   outputs = inputs@{ flake-parts, ... }:
     flake-parts.lib.mkFlake { inherit inputs; } {
       imports = [
+        ./sources.nix
+        ./_sources
         ./packages
         ./patched
         ./devshell.nix
