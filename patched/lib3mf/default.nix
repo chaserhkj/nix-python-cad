@@ -1,7 +1,6 @@
-{ lib, lib3mf, callPackage }:
-let _fetched = (callPackage ../../_sources/generated.nix {}).lib3mf;
-in lib3mf.overrideAttrs {
-    inherit (_fetched) src;
-    version = lib.strings.removePrefix "v" _fetched.version;
+{ lib, lib3mf, callPackage, _src }:
+lib3mf.overrideAttrs (let src = _src.lib3mf; in {
+    inherit (src) src;
+    version = lib.strings.removePrefix "v" src.version;
     patches = [./unittest_deprecated_openssl_call.patch];
-}
+})
