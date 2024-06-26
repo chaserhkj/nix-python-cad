@@ -12,7 +12,7 @@ in {
       fname-postfix = "hcc_h8e84c24_3";
       src = fetchurl {
         url = "https://anaconda.org/${conda-repo}/${pname}/${version}/download/${conda-system}/${pname}-${version}-${fname-postfix}.tar.bz2";
-        sha256 = "00000000000000000000000000000000000000000000";
+        sha256 = "sha256-HvuaTLVRnEKxYNWqnD3OqOu3zjPKAx7OuyIOLPQhNA4=";
       };
     };
   };
