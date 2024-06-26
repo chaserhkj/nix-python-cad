@@ -11,7 +11,7 @@ in
 mkTransposedPerSystemModule {
   name = "_sources";
   option = mkOption {
-    type = types.lazyAttrsOf types.attrsOf types.anything;
+    type = types.lazyAttrsOf types.anything;
     default = { };
     description = ''
     Source code configurations for this flake

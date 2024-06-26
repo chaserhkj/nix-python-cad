@@ -15,7 +15,7 @@
   _src,
 }: let
 src = _src.svgpathtools;
-in buildPythonPackage (_fetched // rec {
+in buildPythonPackage (src // rec {
   pyproject = true;
 
   build-system = [setuptools];

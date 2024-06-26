@@ -1,5 +1,5 @@
 {...}: {
   perSystem = {pkgs, ...}: {
-    packages._src = pkgs.callPackage ./generated.nix {};
-  }
+    _sources = pkgs.callPackage ./generated.nix {};
+  };
 }

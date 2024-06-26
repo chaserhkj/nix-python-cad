@@ -5,7 +5,8 @@
   python,
   runCommand,
   # dependencies
-  lib3mf
+  lib3mf,
+  ...
 }: toPythonModule (runCommand "py-lib3mf" {
   inherit (lib3mf) version;
 } ''
