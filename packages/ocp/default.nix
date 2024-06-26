@@ -5,9 +5,12 @@
   cmake,
   libclang,
   python3Packages,
+
+  # source code
+  _src,
 }: let
-_fetched = (callPackage ../_sources/generated.nix {}).ocp;
-in stdenv.mkDerivation (_fetched // rec {
+src = _src.ocp;
+in stdenv.mkDerivation (src // rec {
   buildInputs = [ libclang ];
   nativeBuildInputs = [ cmake ] ++
   # Package required for the enclosed pywrap generator

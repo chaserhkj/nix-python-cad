@@ -6,9 +6,11 @@
   # build system
   setuptools,
 
+  # source code
+  _src,
 }: let
-_fetched = (callPackage ../_sources/generated.nix {}).trianglesolver;
-in buildPythonPackage (_fetched // rec {
+src = _src.trianglesolver;
+in buildPythonPackage (src // rec {
   pyproject = true;
 
   build-system = [setuptools];

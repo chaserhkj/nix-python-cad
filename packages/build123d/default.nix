@@ -13,9 +13,12 @@
   typing-extensions,
   numpy,
   svgpathtools,
+
+  # source code
+  _src,
 }: let
-_fetched = (callPackage ../_sources/generated.nix {}).build123d;
-in buildPythonPackage (_fetched // rec {
+src = _src.build123d;
+in buildPythonPackage (src // rec {
   pyproject = true;
-  version = lib.strings.removePrefix "v" _fetched.version;
+  version = lib.strings.removePrefix "v" src.version;
 })

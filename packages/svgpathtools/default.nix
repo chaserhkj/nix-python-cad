@@ -10,8 +10,11 @@
   numpy,
   svgwrite,
   scipy,
+
+  # source code
+  _src,
 }: let
-_fetched = (callPackage ../_sources/generated.nix {}).svgpathtools;
+src = _src.svgpathtools;
 in buildPythonPackage (_fetched // rec {
   pyproject = true;
 
